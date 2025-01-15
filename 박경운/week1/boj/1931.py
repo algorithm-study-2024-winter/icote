@@ -10,7 +10,7 @@ for _ in range(n):
   a, b = map(int, input().split())
   convs.append([a, b])
 
-convs.sort(key=lambda x: x[1])
+convs.sort(key=lambda x: (x[1], x[0]))
 ret = []
 for i in convs:
   if not ret:
